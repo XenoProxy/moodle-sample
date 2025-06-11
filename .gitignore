@@ -1,0 +1,95 @@
+
+# Разрешить исключения для необходимых файлов docker-compose
+!docker-compose.yml
+!.env
+
+# Разрешить исключения для Moodle-кода (если вы монтируете его из локальной папки)
+# Если вы используете образ Moodle, и у вас нет локальной папки moodle,
+# то эти строки не нужны. Однако, если вы синхронизируете moodle с гитом,
+# то, возможно, вам понадобится более тонкая настройка здесь.
+# Если вы хотите игнорировать весь Moodle-код, кроме ваших разработок,
+# то эти строки будут вашим основным фильтром.
+!moodle/
+moodle/*
+!moodle/theme/
+!moodle/mod/
+!moodle/blocks/
+!moodle/auth/
+!moodle/report/
+!moodle/local/
+!moodle/enrol/
+!moodle/gradeexport/
+!moodle/gradereport/
+!moodle/filter/`
+!moodle/format/
+!moodle/repository/
+!moodle/tool/`
+!moodle/message/
+!moodle/question/
+!moodle/qtype/
+!moodle/atto/
+!moodle/editor/
+!moodle/quizaccess/
+!moodle/assignment/
+!moodle/book/
+!moodle/chat/
+!moodle/choice/
+!moodle/data/
+!moodle/feedback/
+!moodle/forum/
+!moodle/glossary/
+!moodle/h5p/
+!moodle/imscp/
+!moodle/label/
+!moodle/lesson/
+!moodle/lti/
+!moodle/page/
+!moodle/quiz/
+!moodle/resource/
+!moodle/scorm/
+!moodle/survey/
+!moodle/url/
+!moodle/wiki/
+!moodle/workshop/
+
+
+
+# Разрешить исключения для ваших пользовательских разработок:
+# Важно: указывайте полные пути к вашим директориям с плагинами/темами.
+# Например, если ваша тема находится в my-moodle-project/moodle/theme/your_custom_theme/
+# то используйте !moodle/theme/your_custom_theme/
+
+# Пример для кастомных тем:
+!moodle/theme/
+
+# Пример для кастомных модулей/плагинов активности:
+!moodle/mod/
+
+# Пример для кастомных блоков:
+!moodle/blocks/
+
+# Пример для кастомных плагинов локальной установки:
+!moodle/local/
+
+# Пример для кастомных плагинов аутентификации:
+!moodle/auth/
+
+# Добавьте здесь другие типы плагинов, которые вы планируете разрабатывать
+# Например:
+# !moodle/report/your_custom_report_plugin/
+# !moodle/tool/your_custom_tool_plugin/
+# ... и т.д.
+
+# Игнорировать любые .DS_Store файлы (macOS)
+.DS_Store
+
+# Игнорировать сгенерированные файлы IDE (например, .idea для PhpStorm)
+.idea/
+.vscode/
+*.iml
+
+# Игнорировать временные файлы
+*.log
+*.swp
+*.swo
+*.tmp
