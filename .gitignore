@@ -66,7 +66,7 @@ moodle/*
 !moodle/mod/
 
 # Пример для кастомных блоков:
-!moodle/blocks/
+!moodle/blocks/mycustomblock/
 
 # Пример для кастомных плагинов локальной установки:
 !moodle/local/
