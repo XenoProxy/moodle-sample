@@ -1,0 +1,15 @@
+{
+  "name": "mytheme",
+  "version": "1.0.0",
+  "description": "My Moodle Custom Theme",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --load-path scss --load-path /home/xenoproxy/moodle-sample/moodle/theme/boost/scss --load-path /home/xenoproxy/moodle-sample/moodle/theme/boost/scss/bootstrap --load-path /home/xenoproxy/moodle-sample/moodle/theme/boost/scss/moodle scss/mytheme.scss:style/mytheme.css",
+    "sass:watch": "sass --watch --load-path scss --load-path /home/xenoproxy/moodle-sample/moodle/theme/boost/scss --load-path /home/xenoproxy/moodle-sample/moodle/theme/boost/scss/bootstrap --load-path /home/xenoproxy/moodle-sample/moodle/theme/boost/scss/moodle scss/mytheme.scss:style/mytheme.css"
+  },
+  "author": "Your Name",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "sass": "^1.58.3" 
+  }
+}

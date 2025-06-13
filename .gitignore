@@ -63,6 +63,7 @@ moodle/*
 
 # Пример для кастомных тем:
 !moodle/theme/mytheme/
+moodle/theme/mytheme/node_modules/
 
 # Пример для кастомных модулей/плагинов активности:
 !moodle/mod/

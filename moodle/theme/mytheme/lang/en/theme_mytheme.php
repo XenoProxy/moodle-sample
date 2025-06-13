@@ -1,3 +1,3 @@
 <?php
 
-$string['pluginname'] = 'My Custom Theme';
+$string['pluginname'] = 'My Awesome Red H1 Theme'; // Название темы, видимое в Moodle
