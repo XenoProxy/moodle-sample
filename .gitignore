@@ -62,7 +62,7 @@ moodle/*
 # то используйте !moodle/theme/your_custom_theme/
 
 # Пример для кастомных тем:
-!moodle/theme/mycustomtheme
+!moodle/theme/mytheme/
 
 # Пример для кастомных модулей/плагинов активности:
 !moodle/mod/
