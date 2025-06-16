@@ -76,7 +76,7 @@ moodle/theme/sampletheme/node_modules/
 !moodle/blocks/sample/
 
 # Пример для кастомных плагинов локальной установки:
-!moodle/local/
+!moodle/local/feedback/
 
 # Пример для кастомных плагинов аутентификации:
 !moodle/auth/
